@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="elemento" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <div class="navbar-brand" href="#"><img src="img/Rick and Morty.jpeg" alt=""></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#n1">Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#n2">Episodios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#n3">Inflacion </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- section 1 -->
+      <section id="n0">
+        <div class="port">
+        </div>
+      </section>
+      <!-- section 2 -->
+      <section id="n1">
+        <div class="container">
+          <h1>PERSONAJES RICK AND MORTY</h1>
+          <div id="character-list" class="row"></div>
+        </div>
+      </section>
+      <!-- section 3 -->
+      <section id="n2">
+        <div class="container">
+          <h1>EPISODIOS RICK AND MORTY</h1>
+          <table id="episode-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th>Episodio</th>
+                <th>Nombre</th>
+                <th>Fecha de lanzamiento</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="n3">
+        <div class="container mt-5">
+          <h1>Inflación Mensual</h1>
+          <input type="text" id="searchInput" class="form-control mb-3" placeholder="Buscar mes o anio, por ejemplo: 2004...">
+          <table class="table">
+              <thead class="thead-dark">
+                  <tr>
+                      <th>Mes</th>
+                      <th>Inflación</th>
+                  </tr>
+              </thead>
+              <tbody id="dataBank"></tbody>
+          </table>
+      </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+  <script src="script.js"></script>
+
+</body>
+</html>
